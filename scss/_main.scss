@@ -1,0 +1,8 @@
+@import 'variables';
+@import 'mixin';
+
+main{
+    display: grid;
+    grid-template-columns:1fr 1fr 2fr;
+    grid-template-rows: repeat(21,1fr);
+}

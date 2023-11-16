@@ -1,0 +1,54 @@
+.header_imgnav-flex {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.navbar__logo {
+  width: 8%;
+}
+
+.navbar {
+  width: 92%;
+}
+
+ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar__img {
+  background-image: url(../img/bg.png);
+}
+
+h1 {
+  font-family: "Seymour One", sans-serif;
+  font-size: 3rem;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  grid-template-rows: repeat(21, 1fr);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: aliceblue;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */
