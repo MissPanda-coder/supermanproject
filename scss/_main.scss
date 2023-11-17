@@ -1,8 +1,133 @@
 @import 'variables';
 @import 'mixin';
 
-main{
-    display: grid;
-    grid-template-columns:1fr 1fr 2fr;
-    grid-template-rows: repeat(21,1fr);
+.navbar__img{
+    background-image: url(../img/bg.png);
+    display: block;
+    text-align: center;
+    padding: 30px 0 30px 0;
+}
+
+.main__h2--simple{
+    background-color: rgb(16, 15, 16);
+    color: azure;
+    padding:10px 0 10px 0;
+}
+
+.main__h2--complex{
+    background-color: rgb(16, 15, 16);
+    color: azure; 
+    padding:10px 0 10px 0;
+}
+.main__h2--withContent{
+background-color: rgb(16, 15, 16);
+    color: azure;
+    padding: 10px 0 10px 0;
+}
+
+.card3d{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	
+}
+
+/*Container 3d*/
+.container3d {
+	width: 350px;
+	height: 1600px;
+	perspective: 500px; /*Referencial for 3d Perspective*/
+	border: 1px solid #515668;
+	border-radius: 10px;
+}
+
+/* Card */
+.card{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	box-shadow: 0 0 4px 2px #6876aa;
+	border-radius: 10px;
+	transition: all 2s ease-in-out;
+	transform-style: preserve-3d;
+}
+
+.front,
+.back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	backface-visibility: hidden; /*hide backface*/
+	transition: all 2s ease-in-out;
+	transform-style: preserve-3d; /*to allow 3d on images*/
+
+	background: linear-gradient(
+		129deg,
+		rgb(243, 11, 11) 10%,
+		rgba(255, 255, 255, 1) 14%,
+		rgba(255, 255, 255, 1) 19%,
+		rgb(243, 11, 11) 33%
+	);
+	background-size: 200% 100%;
+}
+
+.front {
+	background-position: left;
+}
+
+.back {
+	background-position: right;
+	transform: rotateY(180deg); /*rotate this face*/
+}
+
+/*Content Card*/
+.frontContent,
+.backContent {
+	transform: translateZ(70px);
+}
+
+/*Front*/
+.frontContent {
+	text-align: center;
+}
+
+.bigSuperman{
+	width: 60%;
+	border-radius: 50%;
+	margin-top: 5%;
+}
+
+/*Back*/
+.backContent {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: rgb(241, 241, 235);
+	text-shadow: 1px 3px 2px #000000;
+    background-color: #6876aa;
+    box-shadow: 0 0 4px 2px #6876aa;
+}
+
+/*Hover Transition*/
+.container3d:hover .card {
+	transform: rotateY(180deg); /*rotate card when hover on container*/
+}
+
+.container3d:hover .front {
+	background-position: right;
+}
+
+.container3d:hover .back {
+	background-position: left;
+}
+
+
+.main__div--logos{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
 }

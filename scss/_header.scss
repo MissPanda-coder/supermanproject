@@ -24,11 +24,19 @@ align-items: center;
 height: 100%;
 }
 
+.navbar__link{
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
 .navbar__img{
 background-image: url(../img/bg.png);
+display: block;
+
 }
+
 
 h1{
     font-family: 'Seymour One', sans-serif;
-    font-size:3rem;
+    font-size:3rem;    
 }
