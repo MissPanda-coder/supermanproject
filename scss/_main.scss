@@ -1,45 +1,51 @@
 @import 'variables';
 @import 'mixin';
 
+
+.main1{
+	padding: 0;
+}
+
 .navbar__img{
     background-image: url(../img/bg.png);
     display: block;
     text-align: center;
-    padding: 30px 0 30px 0;
+  
 }
 
 .main__h2--simple{
-    background-color: rgb(16, 15, 16);
-    color: azure;
+    background-color: #880014;
+    color: #EFBB02;
     padding:10px 0 10px 0;
 }
 
 .main__h2--complex{
-    background-color: rgb(16, 15, 16);
-    color: azure; 
+    background-color: #880014;
+    color: #EFBB02; 
     padding:10px 0 10px 0;
 }
+
+
 .main__h2--withContent{
-background-color: rgb(16, 15, 16);
-    color: azure;
+background-color: #880014;
+    color: #EFBB02;
     padding: 10px 0 10px 0;
 }
 
-.card3d{
-	display:flex;
-	flex-direction:column;
-	justify-content:center;
-	align-items:center;
+.main2{
+	padding:2px;
 	
 }
 
 /*Container 3d*/
 .container3d {
 	width: 350px;
-	height: 1600px;
-	perspective: 500px; /*Referencial for 3d Perspective*/
-	border: 1px solid #515668;
+	height: 550px;
+	perspective: 1100px; /*Referencial for 3d Perspective*/
 	border-radius: 10px;
+	padding-left: 20px;
+
+	
 }
 
 /* Card */
@@ -47,10 +53,13 @@ background-color: rgb(16, 15, 16);
 	position: relative;
 	width: 100%;
 	height: 100%;
+	text-align: center;
 	box-shadow: 0 0 4px 2px #6876aa;
 	border-radius: 10px;
 	transition: all 2s ease-in-out;
 	transform-style: preserve-3d;
+	padding: 0;
+	
 }
 
 .front,
@@ -62,7 +71,10 @@ background-color: rgb(16, 15, 16);
 	backface-visibility: hidden; /*hide backface*/
 	transition: all 2s ease-in-out;
 	transform-style: preserve-3d; /*to allow 3d on images*/
+	
+}
 
+.front {
 	background: linear-gradient(
 		129deg,
 		rgb(243, 11, 11) 10%,
@@ -70,46 +82,43 @@ background-color: rgb(16, 15, 16);
 		rgba(255, 255, 255, 1) 19%,
 		rgb(243, 11, 11) 33%
 	);
-	background-size: 200% 100%;
-}
-
-.front {
-	background-position: left;
 }
 
 .back {
-	background-position: right;
+	background: linear-gradient(129deg,
+		#0054A6 10%,
+		rgba(255, 255, 255, 1) 14%,
+		rgba(255, 255, 255, 1) 19%,
+		#0054A6 33%
+	);
 	transform: rotateY(180deg); /*rotate this face*/
+	
 }
 
 /*Content Card*/
 .frontContent,
-.backContent {
-	transform: translateZ(70px);
+.backContent
+ {transform: translateZ(150px);
 }
+
 
 /*Front*/
 .frontContent {
 	text-align: center;
+	
 }
 
 .bigSuperman{
-	width: 60%;
-	border-radius: 50%;
+	width: 70%;
 	margin-top: 5%;
 }
 
 /*Back*/
 .backContent {
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	color: rgb(241, 241, 235);
-	text-shadow: 1px 3px 2px #000000;
-    background-color: #6876aa;
-    box-shadow: 0 0 4px 2px #6876aa;
+	color: black;
+	text-shadow: 1px 1px 1px #464444;
+		text-align: center;
+	padding: 70px 30px 0 30px;;
 }
 
 /*Hover Transition*/
@@ -117,17 +126,28 @@ background-color: rgb(16, 15, 16);
 	transform: rotateY(180deg); /*rotate card when hover on container*/
 }
 
-.container3d:hover .front {
-	background-position: right;
-}
-
-.container3d:hover .back {
-	background-position: left;
-}
-
-
 .main__div--logos{
-    display: flex;
-    flex-flow: column nowrap;
-    width: 100%;
+	display: flex;
+	flex-flow: column nowrap;
+	text-align: center;
+	box-sizing:content-box;
+
+}
+
+.main__div--miniheroes{
+	position: relative;
+	top:15px;
+}
+
+.img--superheroes{
+	transform: rotateX(105deg);
+	position: relative;
+	bottom: 50px;
+	left: 20px;
+}
+
+
+
+.main__div--video{
+	width: 100%;
 }
