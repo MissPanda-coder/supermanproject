@@ -1,7 +1,7 @@
 
 
 
-.main1{
+.main--1{
 	padding: 0;
 }
 
@@ -31,7 +31,7 @@ background-color: #880014;
     padding: 10px 0 10px 0;
 }
 
-.main2{
+.main--2{
 	padding:2px;
 	
 }
@@ -40,7 +40,7 @@ background-color: #880014;
 .container3d {
 	width: 350px;
 	height: 550px;
-	perspective: 1100px; /*Referencial for 3d Perspective*/
+	perspective: 1700px; /*Referencial for 3d Perspective*/
 	border-radius: 10px;
 	padding-left: 20px;
 
@@ -117,7 +117,7 @@ background-color: #880014;
 	color: black;
 	text-shadow: 1px 1px 1px #464444;
 		text-align: center;
-	padding: 70px 30px 0 30px;;
+	padding: 50px 30px 0 30px;;
 }
 
 /*Hover Transition*/
@@ -126,33 +126,40 @@ background-color: #880014;
 }
 
 .main__div--logos{
-	display: flex;
-	flex-flow: column nowrap;
-	text-align: center;
 	max-width: 100%;
 	max-height: 100%;
-	
-
+	text-align: center;
+	align-items: center;
 }
+
 
 .main__div--miniheroes{
 	position: relative;
-	top:15px;
-	max-width: 100%;
 	max-height: 100%;
+	padding-left: 30px;
 }
 
 .img--superheroes{
 	transform: rotateX(105deg);
 	position: relative;
 	bottom: 50px;
-	left: 20px;
 	max-width: 100%;
 	max-height: 100%;
 }
 
-
-
-.main__div--video{
-	width: 100%;
+h3{
+	padding-bottom: 20px;
 }
+.main__div--video{
+	padding-left: 100px;
+}
+
+
+@media screen and (max-width: 768px) {
+   
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+	
+
+    }

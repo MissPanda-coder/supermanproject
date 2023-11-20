@@ -139,7 +139,7 @@
 
 .main--2{
     display: grid;
-    grid-template-columns: 30% 10% auto;
+    grid-template-columns: 30% 20% 50%;
     grid-template-rows: 120px 180px 180px 180px 180px 180px 50px;
     gap:15px;
     font-size: 1.3em;
@@ -161,7 +161,6 @@
 #main__div--logoSm{
     grid-column: 2/3;
     grid-row: 2/3;
-    
     
 }
 
@@ -193,4 +192,83 @@
 .main__div--video{
     grid-column: 3/4;
     grid-row: 2/7;
+}
+
+
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .main--2{
+        display: grid;
+        grid-template-columns: 30% 30% 40%;
+        grid-template-rows: 120px 180px 180px 180px 180px;
+        gap:10px;
+        font-size: 1em;
+    }
+
+	.main__h2--simple{
+        grid-column: 1/4;
+        grid-row: 1/2;
+        
+    }
+    
+    .main__div--header{
+        grid-column: 1/4;
+        grid-row: 2/3;
+        border: 5px solid #0054A6;
+        text-align: center;
+      
+    }
+    
+    .main__h2--withContent{
+        grid-column: 1/4;
+        grid-row: 13/14;
+    }
+    
+    .header_imgnav-flex{
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+    
+    .container3d{
+        grid-column: 1/2;
+        grid-row: 2/4;
+    }
+    
+    #main__div--logoSm{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        
+    }
+    
+    
+    #main__div--logoBm{
+        grid-column: 2/3;
+        grid-row: 3/4;
+       
+    }
+    
+    #main__div--logoWw{
+        grid-column: 2/3;
+        grid-row: 4/5;
+       
+    }
+    
+    #main__div--logoGl{
+        grid-column: 2/3;
+        grid-row: 5/6;
+     
+    }
+    
+    #main__div--logoAm{
+        grid-column: 2/3;
+        grid-row: 6/7;
+      
+    }
+    
+    .main__div--video{
+        grid-column: 3/4;
+        grid-row: 2/7;
+    }
+    
+
 }
