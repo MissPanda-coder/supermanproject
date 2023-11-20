@@ -1,5 +1,4 @@
-@import 'variables';
-@import 'mixin';
+
 
 
 .main1{
@@ -130,13 +129,17 @@ background-color: #880014;
 	display: flex;
 	flex-flow: column nowrap;
 	text-align: center;
-	box-sizing:content-box;
+	max-width: 100%;
+	max-height: 100%;
+	
 
 }
 
 .main__div--miniheroes{
 	position: relative;
 	top:15px;
+	max-width: 100%;
+	max-height: 100%;
 }
 
 .img--superheroes{
@@ -144,6 +147,8 @@ background-color: #880014;
 	position: relative;
 	bottom: 50px;
 	left: 20px;
+	max-width: 100%;
+	max-height: 100%;
 }
 
 
