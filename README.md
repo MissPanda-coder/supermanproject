@@ -19,7 +19,6 @@ Versions
 Dernière version stable : github AdelineAfpa
 
 Auteurs
-
 Pierre D., formateur Afpa, qui a fourni une maquette du projet.
 Adeline A., qui a reproduit la maquette et changé certains éléments pour personnaliser son projet.
 

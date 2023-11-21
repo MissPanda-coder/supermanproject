@@ -47,6 +47,16 @@ h1 {
   top: 50px;
 }
 
+/*    TELEPHONES   */
+@media screen and (max-width: 768px) {
+  h1 {
+    color: rgb(131, 23, 23);
+    font-size: 2rem;
+  }
+  .navbar__img {
+    padding-bottom: 0;
+  }
+}
 .main--1 {
   padding: 0;
 }
@@ -75,15 +85,11 @@ h1 {
   padding: 10px 0 10px 0;
 }
 
-.main--2 {
-  padding: 2px;
-}
-
 /*Container 3d*/
 .container3d {
   width: 350px;
   height: 550px;
-  perspective: 1700px; /*Referencial for 3d Perspective*/
+  perspective: 1000px; /*Referencial for 3d Perspective*/
   border-radius: 10px;
   padding-left: 20px;
 }
@@ -125,6 +131,7 @@ h1 {
 .frontContent,
 .backContent {
   transform: translateZ(150px);
+  padding-top: 150px;
 }
 
 /*Front*/
@@ -134,7 +141,6 @@ h1 {
 
 .bigSuperman {
   width: 70%;
-  margin-top: 5%;
 }
 
 /*Back*/
@@ -142,7 +148,12 @@ h1 {
   color: black;
   text-shadow: 1px 1px 1px #464444;
   text-align: center;
-  padding: 50px 30px 0 30px;
+  padding-left: 35px;
+}
+
+.backContent__p {
+  width: 90%;
+  text-align: justify;
 }
 
 /*Hover Transition*/
@@ -160,13 +171,13 @@ h1 {
 .main__div--miniheroes {
   position: relative;
   max-height: 100%;
-  padding-left: 30px;
+  padding-left: 20px;
 }
 
 .img--superheroes {
   transform: rotateX(105deg);
   position: relative;
-  bottom: 50px;
+  bottom: 150px;
   max-width: 100%;
   max-height: 100%;
 }
@@ -176,9 +187,76 @@ h3 {
 }
 
 .main__div--video {
-  padding-left: 100px;
+  padding-left: 50px;
 }
 
+.responsive-video {
+  width: 100%;
+  height: auto;
+}
+
+/*    TELEPHONES   */
+@media screen and (max-width: 768px) {
+  #header__imgnav-flexmain2 {
+    padding-bottom: 20px;
+  }
+  .container3d {
+    padding: 0;
+    margin-left: 40px;
+  }
+  .card {
+    width: 80%;
+  }
+  .bigSuperman {
+    width: 40%;
+  }
+  .frontContent {
+    padding-top: 0;
+  }
+  .backContent {
+    font-size: 1.7em;
+    padding-top: 40px;
+  }
+  h3 {
+    display: none;
+  }
+  .responsive-video {
+    padding-top: 30px;
+  }
+  .main__div--video {
+    padding-left: 20px;
+    width: 90%;
+  }
+}
+/*    TABLETTES  */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  #header__imgnav-flexmain2 {
+    padding-bottom: 20px;
+  }
+  .container3d {
+    margin-top: 30px 0 0 10px;
+  }
+  .frontContent {
+    width: 90%;
+    padding-top: 10px;
+  }
+  .bigSuperman {
+    width: 60%;
+  }
+  .backContent {
+    font-size: smaller;
+    width: 80%;
+  }
+  h3 {
+    display: none;
+  }
+  .main__div--video {
+    padding: 10px;
+  }
+  .responsive-video {
+    padding-top: 30px;
+  }
+}
 footer {
   display: block;
   text-align: center;
@@ -373,59 +451,88 @@ footer {
   grid-row: 2/7;
 }
 
+/*    TELEPHONES   */
+@media screen and (max-width: 768px) {
+  .main--2 {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50px 370px 100px 100px 100px 100px 100px 230px;
+    gap: 10px;
+    font-size: 0.5em;
+  }
+  .header_imgnav-flex {
+    grid-column: 1/1;
+    grid-row: 1/2;
+  }
+  .container3d {
+    grid-column: 1/1;
+    grid-row: 2/3;
+  }
+  #main__div--logoSm {
+    grid-column: 1/1;
+    grid-row: 3/4;
+  }
+  #main__div--logoBm {
+    grid-column: 1/1;
+    grid-row: 4/5;
+  }
+  #main__div--logoWw {
+    grid-column: 1/1;
+    grid-row: 5/6;
+  }
+  #main__div--logoGl {
+    grid-column: 1/1;
+    grid-row: 6/7;
+  }
+  #main__div--logoAm {
+    grid-column: 1/1;
+    grid-row: 7/8;
+  }
+  .main__div--video {
+    grid-column: 1/1;
+    grid-row: 8/9;
+  }
+}
+/*    TABLETTES  */
 @media screen and (min-width: 769px) and (max-width: 992px) {
   .main--2 {
     display: grid;
-    grid-template-columns: 30% 30% 40%;
-    grid-template-rows: 120px 180px 180px 180px 180px;
-    gap: 10px;
+    grid-template-columns: 30% 20% 25% 25%;
+    grid-template-rows: 80px 110px 110px 120px 500px;
+    gap: 0;
     font-size: 1em;
   }
-  .main__h2--simple {
-    grid-column: 1/4;
-    grid-row: 1/2;
-  }
-  .main__div--header {
-    grid-column: 1/4;
-    grid-row: 2/3;
-    border: 5px solid #0054A6;
-    text-align: center;
-  }
-  .main__h2--withContent {
-    grid-column: 1/4;
-    grid-row: 13/14;
-  }
   .header_imgnav-flex {
-    grid-column: 1/4;
+    grid-column: 1/5;
     grid-row: 1/2;
   }
   .container3d {
     grid-column: 1/2;
-    grid-row: 2/4;
+    grid-row: 2/5;
   }
   #main__div--logoSm {
     grid-column: 2/3;
     grid-row: 2/3;
   }
   #main__div--logoBm {
-    grid-column: 2/3;
-    grid-row: 3/4;
+    grid-column: 3/4;
+    grid-row: 2/3;
   }
   #main__div--logoWw {
-    grid-column: 2/3;
-    grid-row: 4/5;
+    grid-column: 4/5;
+    grid-row: 2/3;
   }
   #main__div--logoGl {
     grid-column: 2/3;
-    grid-row: 5/6;
+    grid-row: 3/4;
   }
   #main__div--logoAm {
-    grid-column: 2/3;
-    grid-row: 6/7;
+    grid-column: 3/4;
+    grid-row: 3/4;
   }
   .main__div--video {
-    grid-column: 3/4;
-    grid-row: 2/7;
+    grid-column: 1/5;
+    grid-row: 5/6;
   }
 }
 * {

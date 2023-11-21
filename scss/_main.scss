@@ -18,6 +18,7 @@
     padding:10px 0 10px 0;
 }
 
+
 .main__h2--complex{
     background-color: #880014;
     color: #EFBB02; 
@@ -31,20 +32,15 @@ background-color: #880014;
     padding: 10px 0 10px 0;
 }
 
-.main--2{
-	padding:2px;
-	
-}
+
 
 /*Container 3d*/
 .container3d {
 	width: 350px;
 	height: 550px;
-	perspective: 1700px; /*Referencial for 3d Perspective*/
+	perspective: 1000px; /*Referencial for 3d Perspective*/
 	border-radius: 10px;
 	padding-left: 20px;
-
-	
 }
 
 /* Card */
@@ -98,6 +94,8 @@ background-color: #880014;
 .frontContent,
 .backContent
  {transform: translateZ(150px);
+	padding-top: 150px;
+
 }
 
 
@@ -109,7 +107,6 @@ background-color: #880014;
 
 .bigSuperman{
 	width: 70%;
-	margin-top: 5%;
 }
 
 /*Back*/
@@ -117,7 +114,13 @@ background-color: #880014;
 	color: black;
 	text-shadow: 1px 1px 1px #464444;
 		text-align: center;
-	padding: 50px 30px 0 30px;;
+		padding-left: 35px;
+}
+
+.backContent__p{
+	width: 90%;
+text-align: justify;
+
 }
 
 /*Hover Transition*/
@@ -136,13 +139,13 @@ background-color: #880014;
 .main__div--miniheroes{
 	position: relative;
 	max-height: 100%;
-	padding-left: 30px;
+	padding-left: 20px;
 }
 
 .img--superheroes{
 	transform: rotateX(105deg);
 	position: relative;
-	bottom: 50px;
+	bottom: 150px;
 	max-width: 100%;
 	max-height: 100%;
 }
@@ -151,15 +154,93 @@ h3{
 	padding-bottom: 20px;
 }
 .main__div--video{
-	padding-left: 100px;
+	padding-left: 50px;
+}
+
+.responsive-video{
+	width: 100%;
+	height: auto;
 }
 
 
+/*    TELEPHONES   */
 @media screen and (max-width: 768px) {
-   
+	
+	#header__imgnav-flexmain2{
+		padding-bottom: 20px;
+	}
+
+	.container3d{
+		padding:0;
+		margin-left: 40px;
+	}
+.card{
+	width: 80%;
+}
+.bigSuperman{
+	width: 40%;
+}
+.frontContent{
+padding-top: 0;
+
+}
+	.backContent {
+		font-size: 1.7em;
+				padding-top: 40px;
+	}
+		
+h3{
+	display: none;
+    }
+
+
+
+.responsive-video{
+	padding-top: 30px;
 }
 
+.main__div--video{
+	padding-left: 20px;
+	width: 90%;
+}
+
+}
+
+
+/*    TABLETTES  */
 @media screen and (min-width: 769px) and (max-width: 992px) {
+
+	#header__imgnav-flexmain2{
+		padding-bottom: 20px;
+	}
+	.container3d{
+		margin-top: 30px 0 0 10px;
+	}
+
+.frontContent{
+	width: 90%;
+	padding-top: 10px;
+
+}
+.bigSuperman{
+	width: 60%;
+}
+	.backContent {
+
+		font-size: smaller;
+		width: 80%;
+		
+	}
 	
 
-    }
+h3{
+	display: none;
+}
+    
+.main__div--video{
+	padding: 10px;
+}
+	.responsive-video{
+		padding-top: 30px;
+	}
+}

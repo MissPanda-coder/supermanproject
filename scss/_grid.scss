@@ -194,44 +194,75 @@
     grid-row: 2/7;
 }
 
-
-
-@media screen and (min-width: 769px) and (max-width: 992px) {
+/*    TELEPHONES   */
+@media screen and (max-width: 768px) {
     .main--2{
         display: grid;
-        grid-template-columns: 30% 30% 40%;
-        grid-template-rows: 120px 180px 180px 180px 180px;
+        grid-template-columns: 100%;
+        grid-template-rows: 50px 370px 100px 100px 100px 100px 100px 230px;
         gap:10px;
-        font-size: 1em;
+        font-size: 0.5em;
     }
 
-	.main__h2--simple{
-        grid-column: 1/4;
+    .header_imgnav-flex{
+        grid-column: 1/1;
         grid-row: 1/2;
-        
+    }
+    .container3d{
+        grid-column: 1/1;
+        grid-row: 2/3;
     }
     
-    .main__div--header{
-        grid-column: 1/4;
-        grid-row: 2/3;
-        border: 5px solid #0054A6;
-        text-align: center;
+    #main__div--logoSm{
+        grid-column: 1/1;
+        grid-row: 3/4;
+    }
+    
+    #main__div--logoBm{
+        grid-column: 1/1;
+        grid-row: 4/5;  
+    }
+    
+    #main__div--logoWw{
+        grid-column: 1/1;
+        grid-row: 5/6;  
+    }
+    
+    
+    #main__div--logoGl{
+        grid-column: 1/1;
+        grid-row: 6/7;  
+    }
+     
+    #main__div--logoAm{
+        grid-column: 1/1;
+        grid-row: 7/8;
       
     }
     
-    .main__h2--withContent{
-        grid-column: 1/4;
-        grid-row: 13/14;
+    .main__div--video{
+        grid-column: 1/1;
+        grid-row: 8/9;
     }
-    
+
+}
+/*    TABLETTES  */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .main--2{
+        display: grid;
+        grid-template-columns: 30% 20% 25% 25%;
+        grid-template-rows: 80px 110px 110px 120px 500px;
+        gap:0;
+        font-size: 1em;
+    }
+
     .header_imgnav-flex{
-        grid-column: 1/4;
+        grid-column: 1/5;
         grid-row: 1/2;
     }
-    
     .container3d{
         grid-column: 1/2;
-        grid-row: 2/4;
+        grid-row: 2/5;
     }
     
     #main__div--logoSm{
@@ -239,36 +270,35 @@
         grid-row: 2/3;
         
     }
-    
-    
+        
     #main__div--logoBm{
-        grid-column: 2/3;
-        grid-row: 3/4;
-       
+        grid-column: 3/4;
+        grid-row: 2/3;
     }
     
     #main__div--logoWw{
-        grid-column: 2/3;
-        grid-row: 4/5;
+        grid-column: 4/5;
+        grid-row: 2/3;
        
     }
     
     #main__div--logoGl{
         grid-column: 2/3;
-        grid-row: 5/6;
+        grid-row: 3/4;
      
     }
     
     #main__div--logoAm{
-        grid-column: 2/3;
-        grid-row: 6/7;
+        grid-column: 3/4;
+        grid-row: 3/4;
       
     }
     
     .main__div--video{
-        grid-column: 3/4;
-        grid-row: 2/7;
+        grid-column: 1/5;
+        grid-row: 5/6;
     }
     
-
+ 
+    
 }

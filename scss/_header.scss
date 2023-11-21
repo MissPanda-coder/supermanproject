@@ -53,3 +53,16 @@ h1{
 
 }
 
+/*    TELEPHONES   */
+@media screen and (max-width: 768px) {
+
+    h1{
+        color: rgb(131, 23, 23);
+        font-size:2rem;  
+        
+    }
+	.navbar__img{
+             padding-bottom: 0;
+        
+        }
+    }
